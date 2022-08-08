@@ -1,0 +1,61 @@
+ <!-- Section: Design Block -->
+ <section class="text-center text-lg-start">
+   
+  
+  <!-- Jumbotron -->
+  <div class="container py-4">
+    <div class="row g-0 align-items-center">
+    
+        <div class="card cascading-right" style="
+            background: hsla(0, 0%, 100%, 0.55);
+            backdrop-filter: blur(30px);
+            ">
+          <div class="card-body p-5 shadow-5 text-center">
+            <h2 class="fw-bold mb-5">Product Details</h2>
+            <form [formGroup]="teacherreg" (ngSubmit)="onSubmit()">
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="text" id="form3Example1" class="form-control" formControlName="productname"/>
+                    <label class="form-label" for="form3Example1">product name</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="text" id="quality" class="form-control" formControlName="quality"/>
+                    <label class="form-label" for="quality">Quality</label>
+                  </div>
+                </div>
+              </div>
+              
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="text" id="quantity" class="form-control"  formControlName="quantity" />
+                <label class="form-label" for="quantity">Quantity</label>
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input type="text" id="category" class="form-control"  formControlName="qualification"/>
+                <label class="form-label" for="category">Category</label>
+              </div>
+
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">
+               Register
+              </button>
+
+          
+            </form>
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+
+  <!-- Jumbotron -->
+</section>
+<!-- Section: Design Block -->
